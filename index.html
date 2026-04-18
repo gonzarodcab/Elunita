@@ -21,12 +21,6 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 32px;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 18px;
 }
 
 section {
@@ -46,8 +40,17 @@ h2 {
     color: #ff4d6d;
 }
 
-ul {
-    line-height: 1.8;
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    color: #ff4d6d;
 }
 
 .galeria img {
@@ -60,8 +63,6 @@ input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
 button {
@@ -71,12 +72,7 @@ button {
     padding: 12px;
     margin-top: 10px;
     width: 100%;
-    font-size: 16px;
     cursor: pointer;
-}
-
-button:hover {
-    background: #e04360;
 }
 
 footer {
@@ -86,17 +82,39 @@ footer {
     padding: 15px;
 }
 
-/* BOTON WHATSAPP */
+/* BOTONES FLOTANTES */
+.instagram {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background: #E1306C;
+    color: white;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    z-index: 999;
+}
+
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #25D366;
     color: white;
-    padding: 15px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 24px;
     text-decoration: none;
+    z-index: 999;
 }
 </style>
 </head>
@@ -111,18 +129,28 @@ footer {
 <section class="servicios">
     <h2>Servicios</h2>
     <ul>
-        <li>🎉 Cartelería para cumpleaños</li>
-        <li>🎨 Diseño de logos</li>
-        <li>🖨️ Impresiones personalizadas</li>
-        <li>🎁 Decoraciones para eventos</li>
+        <li><a href="#carteles">🎉 Cartelería para cumpleaños</a></li>
+        <li><a href="#logos">🎨 Diseño de logos</a></li>
+        <li><a href="#impresiones">🖨️ Impresiones personalizadas</a></li>
     </ul>
 </section>
 
-<section class="galeria">
-    <h2>Trabajos realizados</h2>
-    <img src="WhatsApp Image 2026-04-18 at 12.10.06 PM (1).jpeg" alt="">
-    <img src="WhatsApp Image 2026-04-18 at 12.10.05 PM.jpeg">
-    <img src="WhatsApp Image 2026-04-18 at 12.10.06 PM.jpeg">
+<section id="carteles" class="galeria">
+    <h2>Cartelería para cumpleaños</h2>
+    <img src="cartel1.jpg">
+    <img src="cartel2.jpg">
+</section>
+
+<section id="logos" class="galeria">
+    <h2>Diseño de logos</h2>
+    <img src="logo1.jpg">
+    <img src="logo2.jpg">
+</section>
+
+<section id="impresiones" class="galeria">
+    <h2>Impresiones personalizadas</h2>
+    <img src="impresion1.jpg">
+    <img src="impresion2.jpg">
 </section>
 
 <section class="contacto">
@@ -143,10 +171,16 @@ footer {
     <p>© 2026 Elunita Arte y Diseño</p>
 </footer>
 
-<!-- BOTON WHATSAPP -->
+<!-- BOTONES -->
 <a class="whatsapp" href="https://wa.me/5493543641735" target="_blank">
-<img src="WhatsApp_icon.png" width="50" height="50"  alt="">
+<img src="WhatsApp_icon.png" width="30" height="30"  alt="">
 </a>
+
+<!-- BOTON Instagram -->
+ <a class="instagram" href="https://www.instagram.com/reel/DXM1Tl8Cc3r/" target="_blank">
+    <img src="insta.jpg" width="30" height="30" alt="">
+
+ </a>
 
 </body>
 </html>
