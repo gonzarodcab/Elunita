@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elunita Arte y Diseño</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff7aa2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        .servicios {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .formulario {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ff7aa2;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://jurassicpark.fandom.com/es/wiki/Elefante" alt="150">
+
+<header>
+    <h1>Elunita Arte y Diseño</h1>
+    <p>Creatividad para tus momentos especiales</p>
+</header>
+
+<nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="servicios" class="servicios">
+    <h2>¿Qué hacemos?</h2>
+    <ul>
+        <li>🎉 Cartelería para cumpleaños</li>
+        <li>🎨 Diseño y creación de logos</li>
+        <li>🖨️ Impresiones personalizadas</li>
+        <li>🎁 Diseños para eventos especiales</li>
+    </ul>
+</section>
+
+<section id="contacto" class="formulario">
+    <h2>Solicitá más información</h2>
+
+    <form action="https://formsubmit.co/floractis@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+        <textarea name="mensaje" placeholder="Escribí tu consulta..." required></textarea>
+
+        <!-- Evita spam -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Elunita Arte y Diseño</p>
+</footer>
+
+</body>
+</html>
